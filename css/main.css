@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+h1.container-title{
+  margin: 50px auto;
+  text-align: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.textarea{
+  font-size: 27px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0 20px blue;
+}
+.textarea:focus{
+  border: 1px solid transparent;
+}
+.button{
+  font-size: 32px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.button:focus{
+  box-shadow: 0 0 10px blue;
+}
+
+@media only screen and (max-width: 992px){
+  h1.container-title{
+    font-size: 30px;
+  }
+
+  .form{
+    gap: 40px;
+  }
+
+  .textarea{
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .form{
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .button{
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  h1.container-title{
+    font-size: 25px;
+  }
+}
